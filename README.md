@@ -58,9 +58,11 @@ fork to your machine using one of the commands below, depending on your OS.
 > **NOTE**
 > Steps to remove previews Neovim configs:
 > # Linux / Macos (unix)
-> `rm -rf ~/.config/nvim`
-> `rm -rf ~/.local/state/nvim`
-> `rm -rf ~/.local/share/nvim`
+```
+  rm -rf ~/.config/nvim
+  rm -rf ~/.local/state/nvim
+  rm -rf ~/.local/share/nvim
+```
 
 > # Flatpak (linux)
 > `rm -rf ~/.var/app/io.neovim.nvim/config/nvim`
