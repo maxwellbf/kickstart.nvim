@@ -12,6 +12,33 @@ A starting point for Neovim that is:
 
 ## Installation
 
+### Steps to remove previews Neovim configs:
+#### Linux / Macos (unix)
+```
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
+
+#### Flatpak (linux)
+```
+rm -rf ~/.var/app/io.neovim.nvim/config/nvim
+rm -rf ~/.var/app/io.neovim.nvim/data/nvim
+rm -rf ~/.var/app/io.neovim.nvim/.local/state/nvim
+```
+
+#### Windows CMD
+```
+rd -r ~\AppData\Local\nvim
+rd -r ~\AppData\Local\nvim-data
+```
+
+#### Window PowerShell
+```
+rm -Force ~\AppData\Local\nvim
+rm -Force ~\AppData\Local\nvim-data
+```
+
 ### Install Neovim
 
 Kickstart.nvim targets *only* the latest
@@ -54,28 +81,6 @@ Neovim's configurations are located under the following paths, depending on your
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo
 so that you have your own copy that you can modify, then install by cloning the
 fork to your machine using one of the commands below, depending on your OS.
-
-> **NOTE**
-> Steps to remove previews Neovim configs:
-> # Linux / Macos (unix)
-```
-  rm -rf ~/.config/nvim
-  rm -rf ~/.local/state/nvim
-  rm -rf ~/.local/share/nvim
-```
-
-> # Flatpak (linux)
-> `rm -rf ~/.var/app/io.neovim.nvim/config/nvim`
-> `rm -rf ~/.var/app/io.neovim.nvim/data/nvim`
-> `rm -rf ~/.var/app/io.neovim.nvim/.local/state/nvim`
-
-> # Windows CMD
-> `rd -r ~\AppData\Local\nvim`
-> `rd -r ~\AppData\Local\nvim-data`
-
-> # Window PowerShell
-> `rm -Force ~\AppData\Local\nvim`
-> `rm -Force ~\AppData\Local\nvim-data`
 
 > **NOTE**
 > Your fork's url will be something like this:
